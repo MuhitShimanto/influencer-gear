@@ -154,8 +154,8 @@ header nav h3 {
     background-color: transparent;
     border: 1px solid transparent;
     position: relative;
-    left: 15rem;
-    padding: 1rem 0;
+    left: calc(100% - 7rem);
+    padding: 2rem 0;
 }
 
 /* featured-products */
