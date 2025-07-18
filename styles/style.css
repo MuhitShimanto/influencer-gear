@@ -19,6 +19,11 @@
 .flex {
     display: flex;
 }
+.section-title {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
 
 /* </Shared Class> */
 
@@ -91,8 +96,6 @@ header nav h3 {
     margin-right: 5px;
 }
 
-/* </hero-section> */
-
 .brand-logo-container {
     margin: 3rem auto;
     gap: 2rem;
@@ -101,4 +104,51 @@ header nav h3 {
     align-items: center;
 }
 
-/* </header> */
+
+/* <main> */
+
+/* <popular-collection-section> */
+
+.popular-collection-container {
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    gap: 1rem;
+}
+.popular-collection-card {
+    flex-direction: column;
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.popular-collection-card img {
+    width: 100%;
+}
+.popular-collection-card .title {
+    font-size: 1.5rem;
+}.popular-collection-card .price {
+    font-size: 1.25rem;
+}
+.popular-collection-card .rating {
+    align-items: center;
+}
+.popular-collection-card .rating-star {
+    color: #FB8200;
+}
+.popular-collection-card .description {
+    margin-top: 15px;
+}
+.popular-collection {
+    /* position: relative; */
+}
+.popular-collection .see-more {
+    color: var(--accent-color);
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    position: relative;
+    left: 15rem;
+    padding: 1rem 0;
+}
