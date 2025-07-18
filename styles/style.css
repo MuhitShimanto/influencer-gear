@@ -35,7 +35,6 @@ header nav {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: rgba(58, 58, 58, 0.05);
 }
 header nav h3 {
     color: var(--text-color);
@@ -66,6 +65,7 @@ header nav h3 {
 /* <hero-section> */
 
 .hero-section {
+    width: 100%;
     margin-top: 20px;
     background-image: url("../images/Circle\ design.svg");
     background-position: top center;
@@ -77,6 +77,11 @@ header nav h3 {
     gap: 1.25rem;
     text-align: center;
     color: var(--text-color);
+}
+.header-text {
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
 }
 .hero-section-title {
     font-size: 2rem;
@@ -91,6 +96,7 @@ header nav h3 {
     border: 1px solid transparent;
     border-radius: 2.5rem;
     color: white;
+    width: fit-content;
 }
 .hero-cto span {
     font-size: 1rem;
@@ -196,4 +202,41 @@ footer h3 {
 }
 footer .copy {
     font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+    .center-container {
+        max-width: 700px;
+    }
+    header nav,
+    .header-menu {
+        flex-direction: row;
+    }
+    header nav {
+        justify-content: space-between;
+    }
+    .header-menu li{
+        display: inline-block;
+    }
+    .hero-section {
+        flex-direction: row;
+        background-position: top right;
+    }
+    .header-image {
+        order: 1;
+    }
+    .header-text {
+        text-align: left;
+        align-items: flex-start;
+    }
+    .popular-collection-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .center-container {
+        max-width: 1000px;
+    }
+    .popular-collection-container {
+        grid-template-columns: repeat(3,1fr);
+    }
 }
