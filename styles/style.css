@@ -127,9 +127,15 @@ header nav h3 {
     flex-direction: column;
     width: 20rem;
     padding: 1rem;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 5px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    transition: all ease-out 150ms;
+    cursor: pointer;
+}
+.popular-collection-card:hover {
+    border: 2px solid var(--accent-color);
+    transform: scale(1.05);
 }
 .popular-collection-card img {
     width: 100%;
@@ -165,6 +171,11 @@ header nav h3 {
     align-items: center;
     gap: 1rem;
     margin-bottom: 2rem;
+}
+.featured-products-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 .featured-products .description {
     text-align: center;
@@ -230,6 +241,12 @@ footer .copy {
     }
     .popular-collection-container {
         grid-template-columns: repeat(2,1fr);
+    }
+    .featured-products {
+        flex-direction: row;
+    }
+    .featured-products .featured-products-text {
+        order: 1;
     }
 }
 @media screen and (min-width: 1200px) {
